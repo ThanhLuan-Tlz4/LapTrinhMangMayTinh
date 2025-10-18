@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on ThanhLuanBlog</title>
+    <link>http://localhost:1313/LapTrinhMangMayTinh/tags/</link>
+    <description>Recent content in Tags on ThanhLuanBlog</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Sat, 18 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/LapTrinhMangMayTinh/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Array</title>
+      <link>http://localhost:1313/LapTrinhMangMayTinh/tags/array/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LapTrinhMangMayTinh/tags/array/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cơ Bản</title>
+      <link>http://localhost:1313/LapTrinhMangMayTinh/tags/c%C6%A1-b%E1%BA%A3n/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LapTrinhMangMayTinh/tags/c%C6%A1-b%E1%BA%A3n/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Function</title>
+      <link>http://localhost:1313/LapTrinhMangMayTinh/tags/function/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LapTrinhMangMayTinh/tags/function/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Giao Diện</title>
+      <link>http://localhost:1313/LapTrinhMangMayTinh/tags/giao-di%E1%BB%87n/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LapTrinhMangMayTinh/tags/giao-di%E1%BB%87n/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Học Lập Trình</title>
+      <link>http://localhost:1313/LapTrinhMangMayTinh/tags/h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LapTrinhMangMayTinh/tags/h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>http://localhost:1313/LapTrinhMangMayTinh/tags/javascript/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LapTrinhMangMayTinh/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lập Trình</title>
+      <link>http://localhost:1313/LapTrinhMangMayTinh/tags/l%E1%BA%ADp-tr%C3%ACnh/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LapTrinhMangMayTinh/tags/l%E1%BA%ADp-tr%C3%ACnh/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trình Duyệt</title>
+      <link>http://localhost:1313/LapTrinhMangMayTinh/tags/tr%C3%ACnh-duy%E1%BB%87t/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LapTrinhMangMayTinh/tags/tr%C3%ACnh-duy%E1%BB%87t/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/LapTrinhMangMayTinh/tags/tutorial/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LapTrinhMangMayTinh/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vòng-Lặp</title>
+      <link>http://localhost:1313/LapTrinhMangMayTinh/tags/v%C3%B2ng-l%E1%BA%B7p/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LapTrinhMangMayTinh/tags/v%C3%B2ng-l%E1%BA%B7p/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

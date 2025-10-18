@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Bài 1: Javascript là gì? Viết chương trình đầu tiên · ThanhLuanBlog
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Bùi Thành Luân">
+<meta name="description" content="Giới thiệu về Javascript và cách viết chương trình đầu tiên.">
+<meta name="keywords" content="blog,developer,personal,thanhluan">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bài 1: Javascript là gì? Viết chương trình đầu tiên">
+  <meta name="twitter:description" content="Giới thiệu về Javascript và cách viết chương trình đầu tiên.">
+
+<meta property="og:url" content="http://localhost:1313/post/post1/">
+  <meta property="og:site_name" content="ThanhLuanBlog">
+  <meta property="og:title" content="Bài 1: Javascript là gì? Viết chương trình đầu tiên">
+  <meta property="og:description" content="Giới thiệu về Javascript và cách viết chương trình đầu tiên.">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2016-12-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2016-12-28T00:00:00+00:00">
+    <meta property="article:tag" content="JavaScript">
+    <meta property="article:tag" content="Học Lập Trình">
+    <meta property="article:tag" content="Cơ Bản">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/post/post1/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      ThanhLuanBlog
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">Giới thiệu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Bài viết</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Liên hệ</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/post/post1/">
+          Bài 1: Javascript là gì? Viết chương trình đầu tiên
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="bài-1-javascript-là-gì-viết-chương-trình-đầu-tiên">
+  Bài 1: Javascript là gì? Viết chương trình đầu tiên
+  <a class="heading-link" href="#b%c3%a0i-1-javascript-l%c3%a0-g%c3%ac-vi%e1%ba%bft-ch%c6%b0%c6%a1ng-tr%c3%acnh-%c4%91%e1%ba%a7u-ti%c3%aan">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p><strong>By Vũ Thanh Tài</strong><br>
+📅 28-12-2016 • ⏱️ 7 phút đọc</p>
+<hr>
+<h2 id="mục-lục">
+  Mục Lục
+  <a class="heading-link" href="#m%e1%bb%a5c-l%e1%bb%a5c">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li><a href="#javascript-l%c3%a0-g%c3%ac" >Javascript là gì?</a></li>
+<li><a href="#c%c3%a1ch-s%e1%bb%ad-d%e1%bb%a5ng-javascript" >Cách sử dụng Javascript</a>
+<ul>
+<li>Sử dụng Javascript trực tiếp trong file HTML</li>
+<li>Import Javascript từ file bên ngoài</li>
+<li>Viết Javascript trong thẻ HTML</li>
+</ul>
+</li>
+<li><a href="#helloworld-kinh-%c4%91i%e1%bb%83n" >Hello World kinh điển</a></li>
+<li><a href="#l%e1%bb%9di-k%e1%ba%bft" >Lời kết</a></li>
+</ol>
+<hr>
+<h2 id="1-javascript-là-gì">
+  1. Javascript là gì?
+  <a class="heading-link" href="#1-javascript-l%c3%a0-g%c3%ac">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Javascript là một <strong>ngôn ngữ lập trình kịch bản</strong> dựa vào các đối tượng có sẵn hoặc do người lập trình định nghĩa.<br>
+Ngày nay, Javascript được sử dụng <strong>rất phổ biến (99% các website hiện nay)</strong> và được <strong>tất cả các trình duyệt hỗ trợ</strong>.</p>
+<p>Javascript hỗ trợ <strong>đa nền tảng</strong>, bạn có thể xây dựng <strong>web game</strong> hay thậm chí <strong>ứng dụng mobile</strong>.</p>
+<p>Với sự hỗ trợ của nhiều ông lớn như Google, Facebook,… thì Javascript <strong>ngày càng mạnh mẽ</strong>.</p>
+<p>Một số framework &amp; thư viện phổ biến:</p>
+<ul>
+<li>AngularJS 1-2</li>
+<li>ReactJS</li>
+<li>jQuery</li>
+<li>NodeJS</li>
+<li>VueJS</li>
+<li>KnockoutJS</li>
+<li>&hellip;</li>
+</ul>
+<hr>
+<h2 id="2-cách-sử-dụng-javascript">
+  2. Cách sử dụng Javascript
+  <a class="heading-link" href="#2-c%c3%a1ch-s%e1%bb%ad-d%e1%bb%a5ng-javascript">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="-sử-dụng-javascript-trực-tiếp-trong-file-html">
+  🔹 Sử dụng Javascript trực tiếp trong file HTML
+  <a class="heading-link" href="#-s%e1%bb%ad-d%e1%bb%a5ng-javascript-tr%e1%bb%b1c-ti%e1%ba%bfp-trong-file-html">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Để viết Javascript trong file HTML, bạn cần khai báo theo cú pháp:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// code javascript ở đây
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div>
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2024 -
+    
+    2025
+     Bùi Thành Luân 
+    ·
+    
+     <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

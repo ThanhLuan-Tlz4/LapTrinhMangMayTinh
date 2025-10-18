@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on ThanhLuanBlog</title>
+    <link>http://localhost:1313/LapTrinhMangMayTinh/categories/programming/</link>
+    <description>Recent content in Programming on ThanhLuanBlog</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Sat, 18 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/LapTrinhMangMayTinh/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bai 6:  JavaScript - Hàm trong JavaScript</title>
+      <link>http://localhost:1313/LapTrinhMangMayTinh/posts/post6/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LapTrinhMangMayTinh/posts/post6/</guid>
+      <description>&lt;h2 id=&#34;1-hàm-là-gì&#34;&gt;&#xD;&#xA;  1. Hàm là gì?&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-h%c3%a0m-l%c3%a0-g%c3%ac&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Hàm là một hoặc nhiều đoạn mã được viết ra để thực thi một hoặc nhiều hành động khi gọi nó. Hàm có khả năng gọi đi gọi lại được. Ví dụ thay vì tính tích của 2 số nhất định, chúng ta có thể sử dụng hàm để tính tích của 2 số bất kỳ mà chúng ta muốn.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

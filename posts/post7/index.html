@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head><script src="/LapTrinhMangMayTinh/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=LapTrinhMangMayTinh/livereload" data-no-instant defer></script>
+  <title>
+  Bài 7: Hàm alert(), confirm() và prompt() trong JavaScript · ThanhLuanBlog
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Bùi Thành Luân">
+<meta name="description" content="Trong JavaScript có ba hàm sẵn có dùng để hiển thị thông báo và tương tác nhanh với người dùng: alert(), confirm() và prompt(). Bài này giới thiệu cú pháp, cách dùng và ví dụ minh họa.
+
+  1. alert()
+  
+    
+    Link to heading
+  
+
+Hàm alert() hiển thị một hộp thoại đơn giản kèm nội dung do bạn cung cấp. Hộp thoại chỉ có một nút (thường là &ldquo;OK&rdquo;).">
+<meta name="keywords" content="blog,developer,personal,thanhluan">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bài 7: Hàm alert(), confirm() và prompt() trong JavaScript">
+  <meta name="twitter:description" content="Trong JavaScript có ba hàm sẵn có dùng để hiển thị thông báo và tương tác nhanh với người dùng: alert(), confirm() và prompt(). Bài này giới thiệu cú pháp, cách dùng và ví dụ minh họa.
+1. alert()Link to headingHàm alert() hiển thị một hộp thoại đơn giản kèm nội dung do bạn cung cấp. Hộp thoại chỉ có một nút (thường là “OK”).">
+
+<meta property="og:url" content="http://localhost:1313/LapTrinhMangMayTinh/posts/post7/">
+  <meta property="og:site_name" content="ThanhLuanBlog">
+  <meta property="og:title" content="Bài 7: Hàm alert(), confirm() và prompt() trong JavaScript">
+  <meta property="og:description" content="Trong JavaScript có ba hàm sẵn có dùng để hiển thị thông báo và tương tác nhanh với người dùng: alert(), confirm() và prompt(). Bài này giới thiệu cú pháp, cách dùng và ví dụ minh họa.
+1. alert()Link to headingHàm alert() hiển thị một hộp thoại đơn giản kèm nội dung do bạn cung cấp. Hộp thoại chỉ có một nút (thường là “OK”).">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-18T00:00:00+00:00">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="Trình Duyệt">
+    <meta property="article:tag" content="Lập Trình">
+    <meta property="article:tag" content="Giao Diện">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/LapTrinhMangMayTinh/posts/post7/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/LapTrinhMangMayTinh/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/LapTrinhMangMayTinh/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/LapTrinhMangMayTinh/">
+      ThanhLuanBlog
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/about/">Giới thiệu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/posts/">Bài viết</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/contact/">Liên hệ</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/LapTrinhMangMayTinh/posts/post7/">
+              Bài 7: Hàm alert(), confirm() và prompt() trong JavaScript
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-10-18T00:00:00Z">
+                tháng 10 18, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/LapTrinhMangMayTinh/tags/javascript/">Javascript</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/LapTrinhMangMayTinh/tags/tr%C3%ACnh-duy%E1%BB%87t/">Trình Duyệt</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/LapTrinhMangMayTinh/tags/l%E1%BA%ADp-tr%C3%ACnh/">Lập Trình</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/LapTrinhMangMayTinh/tags/giao-di%E1%BB%87n/">Giao Diện</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Trong JavaScript có ba hàm sẵn có dùng để hiển thị thông báo và tương tác nhanh với người dùng: alert(), confirm() và prompt(). Bài này giới thiệu cú pháp, cách dùng và ví dụ minh họa.</p>
+<h2 id="1-alert">
+  1. alert()
+  <a class="heading-link" href="#1-alert">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Hàm alert() hiển thị một hộp thoại đơn giản kèm nội dung do bạn cung cấp. Hộp thoại chỉ có một nút (thường là &ldquo;OK&rdquo;).</p>
+<p>Cú pháp:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">alert</span><span class="p">(</span><span class="nx">content</span><span class="p">);</span>
+</span></span></code></pre></div><p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Học lập trình online toidicode.com&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p>Ghi chú: alert trả về undefined và dùng để thông báo, không để lấy dữ liệu từ người dùng.</p>
+<h2 id="2-confirm">
+  2. confirm()
+  <a class="heading-link" href="#2-confirm">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Hàm confirm() hiển thị hộp thoại có hai nút (OK và Cancel). Nếu người dùng bấm OK thì hàm trả về true, nếu bấm Cancel thì trả về false.</p>
+<p>Cú pháp:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">confirm</span><span class="p">(</span><span class="nx">content</span><span class="p">);</span>
+</span></span></code></pre></div><p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">confirm</span><span class="p">(</span><span class="s2">&#34;Bạn có phải là fan của toidicode.com không?&#34;</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s2">&#34;Cảm ơn bạn rất nhiều!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s2">&#34;Sao thế bạn?&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Ghi chú: confirm thích hợp để hỏi người dùng có đồng ý thực hiện hành động hay không (ví dụ xóa dữ liệu).</p>
+<h2 id="3-prompt">
+  3. prompt()
+  <a class="heading-link" href="#3-prompt">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Hàm prompt() hiển thị hộp thoại kèm ô nhập liệu. Nếu người dùng nhập và bấm OK, hàm trả về chuỗi đã nhập; nếu bấm Cancel thì trả về null.</p>
+<p>Cú pháp:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="nx">content</span><span class="p">,</span> <span class="nx">defaultValue</span><span class="p">);</span>
+</span></span></code></pre></div><p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">age</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&#34;Chào bạn, năm nay bạn bao nhiêu tuổi?&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">age</span> <span class="o">!==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s2">&#34;Bạn đã nhập: &#34;</span> <span class="o">+</span> <span class="nx">age</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s2">&#34;Sao không trả lời à bạn?&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Ghi chú: prompt trả về chuỗi; nếu cần số, convert bằng Number() hoặc parseInt().</p>
+<h2 id="ví-dụ-html-để-thử-nhanh">
+  Ví dụ HTML để thử nhanh
+  <a class="heading-link" href="#v%c3%ad-d%e1%bb%a5-html-%c4%91%e1%bb%83-th%e1%bb%ad-nhanh">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Test Dialogs<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&#34;alert(&#39;Xin chào!&#39;)&#34;</span><span class="p">&gt;</span>Test alert<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">button</span>
+</span></span><span class="line"><span class="cl">      <span class="na">onclick</span><span class="o">=</span><span class="s">&#34;if(confirm(&#39;Bạn muốn tiếp tục?&#39;)) alert(&#39;Đã chọn OK&#39;); else alert(&#39;Đã chọn Cancel&#39;)&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      Test confirm
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">button</span>
+</span></span><span class="line"><span class="cl">      <span class="na">onclick</span><span class="o">=</span><span class="s">&#34;const r = prompt(&#39;Tên bạn là gì?&#39;); if (r!==null) alert(&#39;Chào &#39; + r); else alert(&#39;Không nhập&#39;)&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      Test prompt
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="kết-luận">
+  Kết luận
+  <a class="heading-link" href="#k%e1%ba%bft-lu%e1%ba%adn">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Ba hàm alert, confirm, prompt rất tiện cho thao tác nhanh khi học hoặc debug. Trong ứng dụng thực tế, người ta thường dùng các thành phần UI tùy chỉnh (modal) để có trải nghiệm tốt hơn và kiểm soát giao diện.</p>
+<p>Phần tiếp theo: mảng trong JavaScript.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2024 -
+    
+    2025
+     Bùi Thành Luân 
+    ·
+    
+     <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/LapTrinhMangMayTinh/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head><script src="/LapTrinhMangMayTinh/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=LapTrinhMangMayTinh/livereload" data-no-instant defer></script>
+  <title>
+  Bài 8: Mảng trong JavaScript — Khai báo, truy xuất và các hàm thường dùng · ThanhLuanBlog
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Bùi Thành Luân">
+<meta name="description" content="
+Khai báo mảng
+
+
+Trong JavaScript có 2 cách khai báo mảng phổ biến:
+Khai báo bằng dấu []
+// Cú pháp:
+var arr = [value1, value2, ..., valueN];
+
+// Ví dụ:
+var arr = [1, 2, 4, 5, 9, 6];
+Khai báo bằng new Array()
+// Cú pháp:
+var arr = new Array(value1, value2, ..., valueN);
+
+// Ví dụ:
+var arr = new Array(1, 2, 4, 5, 9, 6);
+
+Truy xuất mảng
+
+
+Lấy phần tử theo chỉ số (index bắt đầu từ 0):
+var arr = [1, 2, 4, 5, 9, 6];
+console.log(arr[1]); // 2
+
+Các hàm/thuộc tính xử lý mảng
+
+
+
+
+length
+
+Thuộc tính trả về số phần tử:
+
+arr.length;
+
+
+join()">
+<meta name="keywords" content="blog,developer,personal,thanhluan">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bài 8: Mảng trong JavaScript — Khai báo, truy xuất và các hàm thường dùng">
+  <meta name="twitter:description" content="Khai báo mảng Trong JavaScript có 2 cách khai báo mảng phổ biến:
+Khai báo bằng dấu []
+// Cú pháp: var arr = [value1, value2, ..., valueN]; // Ví dụ: var arr = [1, 2, 4, 5, 9, 6]; Khai báo bằng new Array()
+// Cú pháp: var arr = new Array(value1, value2, ..., valueN); // Ví dụ: var arr = new Array(1, 2, 4, 5, 9, 6); Truy xuất mảng Lấy phần tử theo chỉ số (index bắt đầu từ 0):
+var arr = [1, 2, 4, 5, 9, 6]; console.log(arr[1]); // 2 Các hàm/thuộc tính xử lý mảng length
+Thuộc tính trả về số phần tử: arr.length; join()">
+
+<meta property="og:url" content="http://localhost:1313/LapTrinhMangMayTinh/posts/post8/">
+  <meta property="og:site_name" content="ThanhLuanBlog">
+  <meta property="og:title" content="Bài 8: Mảng trong JavaScript — Khai báo, truy xuất và các hàm thường dùng">
+  <meta property="og:description" content="Khai báo mảng Trong JavaScript có 2 cách khai báo mảng phổ biến:
+Khai báo bằng dấu []
+// Cú pháp: var arr = [value1, value2, ..., valueN]; // Ví dụ: var arr = [1, 2, 4, 5, 9, 6]; Khai báo bằng new Array()
+// Cú pháp: var arr = new Array(value1, value2, ..., valueN); // Ví dụ: var arr = new Array(1, 2, 4, 5, 9, 6); Truy xuất mảng Lấy phần tử theo chỉ số (index bắt đầu từ 0):
+var arr = [1, 2, 4, 5, 9, 6]; console.log(arr[1]); // 2 Các hàm/thuộc tính xử lý mảng length
+Thuộc tính trả về số phần tử: arr.length; join()">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-18T00:00:00+00:00">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="Array">
+    <meta property="article:tag" content="Tutorial">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/LapTrinhMangMayTinh/posts/post8/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/LapTrinhMangMayTinh/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/LapTrinhMangMayTinh/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/LapTrinhMangMayTinh/">
+      ThanhLuanBlog
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/about/">Giới thiệu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/posts/">Bài viết</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/contact/">Liên hệ</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/LapTrinhMangMayTinh/posts/post8/">
+              Bài 8: Mảng trong JavaScript — Khai báo, truy xuất và các hàm thường dùng
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-10-18T00:00:00Z">
+                tháng 10 18, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/LapTrinhMangMayTinh/tags/javascript/">Javascript</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/LapTrinhMangMayTinh/tags/array/">Array</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/LapTrinhMangMayTinh/tags/tutorial/">Tutorial</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <ol>
+<li>Khai báo mảng</li>
+</ol>
+<hr>
+<p>Trong JavaScript có 2 cách khai báo mảng phổ biến:</p>
+<p>Khai báo bằng dấu []</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Cú pháp:
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="nx">value1</span><span class="p">,</span> <span class="nx">value2</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">valueN</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Ví dụ:
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">];</span>
+</span></span></code></pre></div><p>Khai báo bằng new Array()</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Cú pháp:
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">value1</span><span class="p">,</span> <span class="nx">value2</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">valueN</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Ví dụ:
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+</span></span></code></pre></div><ol start="2">
+<li>Truy xuất mảng</li>
+</ol>
+<hr>
+<p>Lấy phần tử theo chỉ số (index bắt đầu từ 0):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span> <span class="c1">// 2
+</span></span></span></code></pre></div><ol start="3">
+<li>Các hàm/thuộc tính xử lý mảng</li>
+</ol>
+<hr>
+<ul>
+<li>
+<p>length</p>
+<ul>
+<li>Thuộc tính trả về số phần tử:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>join()</p>
+<ul>
+<li>Nối các phần tử thành chuỗi, tham số là ký tự phân cách:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">arr</span><span class="p">.</span><span class="nx">join</span><span class="p">();</span> <span class="c1">// &#34;1,2,4,5,9,6&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">arr</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">&#34;-&#34;</span><span class="p">);</span> <span class="c1">// &#34;1-2-4-5-9-6&#34;
+</span></span></span></code></pre></div></li>
+<li>
+<p>valueOf()</p>
+<ul>
+<li>Trả về giá trị mảng (thường tương tự join với dấu phẩy khi ép chuỗi).</li>
+</ul>
+</li>
+<li>
+<p>push(&hellip;)</p>
+<ul>
+<li>Thêm 1 hoặc nhiều phần tử vào cuối mảng:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+</span></span></code></pre></div></li>
+<li>
+<p>pop()</p>
+<ul>
+<li>Xóa và trả về phần tử cuối cùng:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">arr</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+</span></span></code></pre></div></li>
+<li>
+<p>unshift(&hellip;)</p>
+<ul>
+<li>Thêm 1 hoặc nhiều phần tử vào đầu mảng:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">arr</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">arr</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+</span></span></code></pre></div></li>
+<li>
+<p>shift()</p>
+<ul>
+<li>Xóa và trả về phần tử đầu tiên:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">arr</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
+</span></span></code></pre></div></li>
+<li>
+<p>splice(index, howMany, &hellip;items)</p>
+<ul>
+<li>Chèn/xóa phần tử tại vị trí xác định:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// tại vị trí 1, không xóa, chèn 3 và 8
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// để howMany &gt; 0 sẽ xóa howMany phần tử bắt đầu từ index
+</span></span></span></code></pre></div></li>
+<li>
+<p>concat(&hellip;)</p>
+<ul>
+<li>Nối hai hoặc nhiều mảng, trả về mảng mới:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">7</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">merged</span> <span class="o">=</span> <span class="nx">arr1</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">arr2</span><span class="p">);</span> <span class="c1">// [1,2,4,5,9,6,3,8,7]
+</span></span></span></code></pre></div></li>
+<li>
+<p>slice(begin, end)</p>
+<ul>
+<li>Lấy một phần mảng (không thay đổi mảng gốc). end là chỉ số kết thúc (không bao gồm):</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">arr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span> <span class="c1">// phần tử từ chỉ số 3 đến cuối
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">arr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span> <span class="c1">// phần tử chỉ số 1,2,3
+</span></span></span></code></pre></div></li>
+<li>
+<p>sort()</p>
+<ul>
+<li>Sắp xếp mảng. Mặc định sắp xếp theo chuỗi; cho số nên dùng comparator:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">arr</span><span class="p">.</span><span class="nx">sort</span><span class="p">();</span> <span class="c1">// với số có thể cần: arr.sort((a,b)=&gt;a-b)
+</span></span></span></code></pre></div></li>
+<li>
+<p>reverse()</p>
+<ul>
+<li>Đảo ngược thứ tự phần tử:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">arr</span><span class="p">.</span><span class="nx">reverse</span><span class="p">();</span>
+</span></span></code></pre></div></li>
+</ul>
+<ol start="4">
+<li>Kết luận</li>
+</ol>
+<hr>
+<p>Đã giới thiệu các cách khai báo, truy xuất và các hàm xử lý mảng cơ bản trong JavaScript. Ở phần sau sẽ chuyển sang tìm hiểu về object trong JavaScript (làm giống cấu trúc của post2).</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2024 -
+    
+    2025
+     Bùi Thành Luân 
+    ·
+    
+     <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/LapTrinhMangMayTinh/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

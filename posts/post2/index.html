@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head><script src="/LapTrinhMangMayTinh/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=LapTrinhMangMayTinh/livereload" data-no-instant defer></script>
+  <title>
+  Bài 2: Toán tử trong Javascript · ThanhLuanBlog
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Bùi Thành Luân">
+<meta name="description" content="Các toán tử cơ bản trong javascript">
+<meta name="keywords" content="blog,developer,personal,thanhluan">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bài 2: Toán tử trong Javascript">
+  <meta name="twitter:description" content="Các toán tử cơ bản trong javascript">
+
+<meta property="og:url" content="http://localhost:1313/LapTrinhMangMayTinh/posts/post2/">
+  <meta property="og:site_name" content="ThanhLuanBlog">
+  <meta property="og:title" content="Bài 2: Toán tử trong Javascript">
+  <meta property="og:description" content="Các toán tử cơ bản trong javascript">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-18T00:00:00+00:00">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="Học Lập Trình">
+    <meta property="article:tag" content="Cơ Bản">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/LapTrinhMangMayTinh/posts/post2/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/LapTrinhMangMayTinh/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/LapTrinhMangMayTinh/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/LapTrinhMangMayTinh/">
+      ThanhLuanBlog
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/about/">Giới thiệu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/posts/">Bài viết</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/contact/">Liên hệ</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/LapTrinhMangMayTinh/posts/post2/">
+              Bài 2: Toán tử trong Javascript
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-10-18T00:00:00Z">
+                tháng 10 18, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/LapTrinhMangMayTinh/tags/javascript/">Javascript</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/LapTrinhMangMayTinh/tags/h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh/">Học Lập Trình</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/LapTrinhMangMayTinh/tags/c%C6%A1-b%E1%BA%A3n/">Cơ Bản</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="toán-tử-trong-javascript">
+  Toán tử trong JavaScript
+  <a class="heading-link" href="#to%c3%a1n-t%e1%bb%ad-trong-javascript">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Bài viết này tóm tắt các loại toán tử cơ bản trong JavaScript: toán tử gán, số học, kết hợp, quan hệ và logic, kèm ví dụ.</p>
+<h2 id="1-toán-tử-gán">
+  1. Toán tử gán
+  <a class="heading-link" href="#1-to%c3%a1n-t%e1%bb%ad-g%c3%a1n">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Toán tử gán dùng để gán giá trị cho biến. Dấu gán là <code>=</code>.</p>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1996</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="2-toán-tử-số-học">
+  2. Toán tử số học
+  <a class="heading-link" href="#2-to%c3%a1n-t%e1%bb%ad-s%e1%bb%91-h%e1%bb%8dc">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Các phép toán cơ bản: cộng, trừ, nhân, chia, chia lấy dư.</p>
+<ul>
+<li>Cộng:
+<ul>
+<li>Nếu cả hai là số: cộng số.</li>
+<li>Nếu một hoặc cả hai là chuỗi: nối chuỗi.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="s2">&#34;vu thanh &#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">d</span> <span class="o">=</span> <span class="s2">&#34;tai&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">);</span> <span class="c1">// 11
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s2">&#34;&lt;br/&gt;&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">c</span> <span class="o">+</span> <span class="nx">d</span><span class="p">);</span> <span class="c1">// &#39;vu thanh tai&#39;
+</span></span></span></code></pre></div><ul>
+<li>Trừ:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="mi">6</span> <span class="o">-</span> <span class="mi">5</span><span class="p">);</span> <span class="c1">// 1
+</span></span></span></code></pre></div><ul>
+<li>Nhân:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="mi">6</span> <span class="o">*</span> <span class="mi">5</span><span class="p">);</span> <span class="c1">// 30
+</span></span></span></code></pre></div><ul>
+<li>Chia:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="mi">10</span> <span class="o">/</span> <span class="mi">5</span><span class="p">);</span> <span class="c1">// 2
+</span></span></span></code></pre></div><ul>
+<li>Chia lấy dư (modulo):</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="mi">6</span> <span class="o">%</span> <span class="mi">5</span><span class="p">);</span> <span class="c1">// 1
+</span></span></span></code></pre></div><h2 id="3-toán-tử-kết-hợp-rút-gọn">
+  3. Toán tử kết hợp (rút gọn)
+  <a class="heading-link" href="#3-to%c3%a1n-t%e1%bb%ad-k%e1%ba%bft-h%e1%bb%a3p-r%c3%bat-g%e1%bb%8dn">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Các toán tử rút gọn giúp viết ngắn các phép gán kèm toán học.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Ví dụ</th>
+          <th>Tương đương</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>a++</code></td>
+          <td><code>a = a + 1</code></td>
+      </tr>
+      <tr>
+          <td><code>a--</code></td>
+          <td><code>a = a - 1</code></td>
+      </tr>
+      <tr>
+          <td><code>a *= b</code></td>
+          <td><code>a = a * b</code></td>
+      </tr>
+      <tr>
+          <td><code>a /= b</code></td>
+          <td><code>a = a / b</code></td>
+      </tr>
+      <tr>
+          <td><code>a += b</code></td>
+          <td><code>a = a + b</code></td>
+      </tr>
+      <tr>
+          <td><code>a -= b</code></td>
+          <td><code>a = a - b</code></td>
+      </tr>
+      <tr>
+          <td><code>a %= b</code></td>
+          <td><code>a = a % b</code></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="4-toán-tử-quan-hệ-so-sánh">
+  4. Toán tử quan hệ (So sánh)
+  <a class="heading-link" href="#4-to%c3%a1n-t%e1%bb%ad-quan-h%e1%bb%87-so-s%c3%a1nh">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Trả về giá trị boolean (<code>true</code> hoặc <code>false</code>).</p>
+<table>
+  <thead>
+      <tr>
+          <th>Toán tử</th>
+          <th>Nghĩa</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>&gt;</code></td>
+          <td>Lớn hơn</td>
+      </tr>
+      <tr>
+          <td><code>&gt;=</code></td>
+          <td>Lớn hơn hoặc bằng</td>
+      </tr>
+      <tr>
+          <td><code>&lt;</code></td>
+          <td>Nhỏ hơn</td>
+      </tr>
+      <tr>
+          <td><code>&lt;=</code></td>
+          <td>Nhỏ hơn hoặc bằng</td>
+      </tr>
+      <tr>
+          <td><code>==</code></td>
+          <td>Bằng (so sánh giá trị, không xét kiểu)</td>
+      </tr>
+      <tr>
+          <td><code>!=</code></td>
+          <td>Khác</td>
+      </tr>
+  </tbody>
+</table>
+<p>Lưu ý: các toán tử nhiều ký tự như <code>&gt;=</code>, <code>&lt;=</code> phải viết liền, không có khoảng trắng ở giữa.</p>
+<p>(Trong thực tế còn có <code>===</code> và <code>!==</code> để so sánh chặt chẽ cả giá trị và kiểu.)</p>
+<h2 id="5-toán-tử-logic">
+  5. Toán tử logic
+  <a class="heading-link" href="#5-to%c3%a1n-t%e1%bb%ad-logic">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Dùng để kết hợp các biểu thức boolean.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Toán tử</th>
+          <th>Ý nghĩa</th>
+          <th>Ví dụ</th>
+          <th>Kết quả</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>&amp;&amp;</code></td>
+          <td>Và — true nếu cả hai vế true</td>
+          <td><code>true &amp;&amp; false</code></td>
+          <td>false</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>`</td>
+          <td></td>
+          <td>`</td>
+          <td>Hoặc — true nếu ít nhất một vế true</td>
+          <td>`true</td>
+          <td></td>
+          <td>false`</td>
+          <td>true</td>
+      </tr>
+      <tr>
+          <td><code>!</code></td>
+          <td>Phủ định</td>
+          <td><code>!false</code></td>
+          <td>true</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="6-lời-kết">
+  6. Lời kết
+  <a class="heading-link" href="#6-l%e1%bb%9di-k%e1%ba%bft">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Đã giới thiệu các toán tử cơ bản thường dùng trong JavaScript. Ôn lại và thực hành các ví dụ trên; bài tiếp theo sẽ tìm hiểu câu lệnh rẽ nhánh (if / switch).</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2024 -
+    
+    2025
+     Bùi Thành Luân 
+    ·
+    
+     <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/LapTrinhMangMayTinh/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

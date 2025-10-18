@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head><script src="/LapTrinhMangMayTinh/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=LapTrinhMangMayTinh/livereload" data-no-instant defer></script>
+  <title>
+  Bài 1: Javascript là gì? Viết chương trình đầu tiên · ThanhLuanBlog
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Bùi Thành Luân">
+<meta name="description" content="Các biến cơ bản trong javascript">
+<meta name="keywords" content="blog,developer,personal,thanhluan">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bài 1: Javascript là gì? Viết chương trình đầu tiên">
+  <meta name="twitter:description" content="Các biến cơ bản trong javascript">
+
+<meta property="og:url" content="http://localhost:1313/LapTrinhMangMayTinh/posts/post1/">
+  <meta property="og:site_name" content="ThanhLuanBlog">
+  <meta property="og:title" content="Bài 1: Javascript là gì? Viết chương trình đầu tiên">
+  <meta property="og:description" content="Các biến cơ bản trong javascript">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-18T00:00:00+00:00">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="Học Lập Trình">
+    <meta property="article:tag" content="Cơ Bản">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/LapTrinhMangMayTinh/posts/post1/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/LapTrinhMangMayTinh/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/LapTrinhMangMayTinh/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/LapTrinhMangMayTinh/">
+      ThanhLuanBlog
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/about/">Giới thiệu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/posts/">Bài viết</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/contact/">Liên hệ</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/LapTrinhMangMayTinh/posts/post1/">
+              Bài 1: Javascript là gì? Viết chương trình đầu tiên
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-10-18T00:00:00Z">
+                tháng 10 18, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/LapTrinhMangMayTinh/tags/javascript/">Javascript</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/LapTrinhMangMayTinh/tags/h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh/">Học Lập Trình</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/LapTrinhMangMayTinh/tags/c%C6%A1-b%E1%BA%A3n/">Cơ Bản</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="1-hằng-trong-javascript">
+  1. Hằng trong JavaScript
+  <a class="heading-link" href="#1-h%e1%ba%b1ng-trong-javascript">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Để khai báo hằng trong JavaScript chúng ta sử dụng cú pháp:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">tenHang</span> <span class="o">=</span> <span class="nx">giatri</span><span class="p">;</span>
+</span></span></code></pre></div><p>Trong đó:</p>
+<ul>
+<li><strong>tenHang</strong>: Là tên của hằng các bạn muốn đặt.</li>
+<li><strong>giatri</strong>: Là giá trị của hằng, có thể là số, chuỗi, mảng, object.</li>
+</ul>
+<p><strong>Chú ý:</strong> Tên Hằng phải được đặt theo quy tắc sau đây:</p>
+<ul>
+<li>Tên hằng bắt đầu phải là chữ cái hoặc ký tự <code>_</code></li>
+<li>Tên hằng không được bắt đầu bằng số.</li>
+<li>Tên hằng có độ dài không giới hạn.</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">MyConst</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// đúng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">_MyConst</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// đúng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">__MyConst</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// đúng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">MyConst1</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// đúng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">_MyConst1</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// đúng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">__MyConst1</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// đúng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="mi">90</span><span class="nx">MyConst1</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// sai
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="o">-</span><span class="nx">MyConst1</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// sai
+</span></span></span></code></pre></div><hr>
+<h1 id="2-biến-trong-javascript">
+  2. Biến trong JavaScript
+  <a class="heading-link" href="#2-bi%e1%ba%bfn-trong-javascript">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Trong JavaScript chúng ta có thể khai báo biến bằng các cách sau đây:</p>
+<h3 id="cách-1-sử-dụng-từ-khóa-var">
+  Cách 1: Sử dụng từ khóa <code>var</code>
+  <a class="heading-link" href="#c%c3%a1ch-1-s%e1%bb%ad-d%e1%bb%a5ng-t%e1%bb%ab-kh%c3%b3a-var">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">tenBien</span> <span class="o">=</span> <span class="nx">giaTri</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="cách-2-không-cần-sử-dụng-từ-khóa">
+  Cách 2: Không cần sử dụng từ khóa
+  <a class="heading-link" href="#c%c3%a1ch-2-kh%c3%b4ng-c%e1%ba%a7n-s%e1%bb%ad-d%e1%bb%a5ng-t%e1%bb%ab-kh%c3%b3a">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">tenBien</span> <span class="o">=</span> <span class="nx">giaTri</span><span class="p">;</span>
+</span></span></code></pre></div><p>Trong đó:</p>
+<ul>
+<li><strong>tenBien</strong>: Là tên của biến các bạn muốn đặt.</li>
+<li><strong>giaTri</strong>: Là giá trị của biến, có thể là số, chuỗi, mảng, object.</li>
+</ul>
+<p><strong>Chú ý:</strong> Tên Biến phải được đặt theo quy tắc sau đây:</p>
+<ul>
+<li>Tên biến bắt đầu phải là chữ cái hoặc ký tự <code>_</code></li>
+<li>Tên biến không được bắt đầu bằng số.</li>
+<li>Tên biến có độ dài không giới hạn.</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">MyVariable</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// đúng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">_MyVariable</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// đúng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">__MyVariable</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// đúng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">MyVariable1</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// đúng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">_MyVariable1</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// đúng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">__MyVariable1</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// đúng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="mi">90</span><span class="nx">MyVariable1</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// sai
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="o">-</span><span class="nx">MyVariable1</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// sai
+</span></span></span></code></pre></div><hr>
+<h1 id="3-kiểu-dữ-liệu-trong-javascript">
+  3. Kiểu dữ liệu trong JavaScript
+  <a class="heading-link" href="#3-ki%e1%bb%83u-d%e1%bb%af-li%e1%bb%87u-trong-javascript">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Cũng giống như trong PHP, biến và hằng trong JavaScript cũng tự detect kiểu dữ liệu.</p>
+<p><strong>Ví dụ:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// dữ liệu kiểu int
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mf">5.65</span><span class="p">;</span> <span class="c1">// dữ liệu kiểu float
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="s2">&#34;Toidicode&#34;</span><span class="p">;</span> <span class="c1">// dữ liệu kiểu string
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">];</span> <span class="c1">// dữ liệu kiểu array
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">);</span> <span class="c1">// dữ liệu kiểu array
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span> <span class="nx">c</span><span class="o">:</span> <span class="mi">5</span> <span class="p">};</span> <span class="c1">// dữ liệu kiểu object
+</span></span></span></code></pre></div><hr>
+<h1 id="4-hiển-thị-nội-dung-ra-trình-duyệt">
+  4. Hiển thị nội dung ra trình duyệt
+  <a class="heading-link" href="#4-hi%e1%bb%83n-th%e1%bb%8b-n%e1%bb%99i-dung-ra-tr%c3%acnh-duy%e1%bb%87t">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Trong JavaScript bạn có thể hiển thị nội dung ra trình duyệt bằng rất nhiều cách, nhưng ở đây là hai cách thông dụng nhất:</p>
+<h3 id="cách-1-dùng-documentwrite-hoặc-documentwriteln">
+  Cách 1: Dùng <code>document.write()</code> hoặc <code>document.writeln()</code>
+  <a class="heading-link" href="#c%c3%a1ch-1-d%c3%b9ng-documentwrite-ho%e1%ba%b7c-documentwriteln">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="s2">&#34;toidicode.com&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+</span></span></code></pre></div><p><strong>Chú ý:</strong> Cách này không thể in ra được thông tin của object.</p>
+<h3 id="cách-2-dùng-consolelog">
+  Cách 2: Dùng <code>console.log()</code>
+  <a class="heading-link" href="#c%c3%a1ch-2-d%c3%b9ng-consolelog">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="s2">&#34;toidicode.com&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+</span></span></code></pre></div><p>Cách này có thể xuất được nội dung của tất cả các dạng dữ liệu.<br>
+Để xem được hiển thị của nó, bạn cần bật cửa sổ console của trình duyệt (thường ấn <strong>F12</strong>).</p>
+<hr>
+<h1 id="5-lời-kết">
+  5. Lời kết
+  <a class="heading-link" href="#5-l%e1%bb%9di-k%e1%ba%bft">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Qua phần này mình đã giới thiệu với mọi người về <strong>hằng và biến trong JavaScript</strong>.<br>
+Tuy nó rất cơ bản nhưng mọi người cũng nên chú ý, vì sau này sẽ phải sử dụng nó rất nhiều đấy.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2024 -
+    
+    2025
+     Bùi Thành Luân 
+    ·
+    
+     <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/LapTrinhMangMayTinh/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lập Trình on ThanhLuanBlog</title>
+    <link>http://localhost:1313/LapTrinhMangMayTinh/tags/l%E1%BA%ADp-tr%C3%ACnh/</link>
+    <description>Recent content in Lập Trình on ThanhLuanBlog</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Sat, 18 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/LapTrinhMangMayTinh/tags/l%E1%BA%ADp-tr%C3%ACnh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bài 7: Hàm alert(), confirm() và prompt() trong JavaScript</title>
+      <link>http://localhost:1313/LapTrinhMangMayTinh/posts/post7/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LapTrinhMangMayTinh/posts/post7/</guid>
+      <description>&lt;p&gt;Trong JavaScript có ba hàm sẵn có dùng để hiển thị thông báo và tương tác nhanh với người dùng: alert(), confirm() và prompt(). Bài này giới thiệu cú pháp, cách dùng và ví dụ minh họa.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-alert&#34;&gt;&#xD;&#xA;  1. alert()&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-alert&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Hàm alert() hiển thị một hộp thoại đơn giản kèm nội dung do bạn cung cấp. Hộp thoại chỉ có một nút (thường là &amp;ldquo;OK&amp;rdquo;).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
