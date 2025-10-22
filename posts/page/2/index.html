@@ -144,18 +144,37 @@
       </h1>
     </header>
     
-    <ul><li>
-  <span class="date">tháng 10 18, 2025</span>
-  <a class="title" href="/LapTrinhMangMayTinh/posts/post7/">Bài 7: Hàm alert(), confirm() và prompt() trong JavaScript</a>
-</li>
-<li>
-  <span class="date">tháng 10 18, 2025</span>
-  <a class="title" href="/LapTrinhMangMayTinh/posts/post8/">Bài 8: Mảng trong JavaScript — Khai báo, truy xuất và các hàm thường dùng</a>
-</li>
-<li>
-  <span class="date">tháng 10 18, 2025</span>
-  <a class="title" href="/LapTrinhMangMayTinh/posts/post9/">Bài 9: DOM là gì và cách truy xuất DOM elements trong JavaScript</a>
-</li>
+    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+
+  <li style="width: 260px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <a href="/LapTrinhMangMayTinh/posts/post7/" style="text-decoration: none; color: inherit;">
+      <img src="/LapTrinhMangMayTinh/images/post2.png" alt="post image" style="width: 100%; height: 150px; object-fit: cover;">
+      <div style="padding: 12px;">
+        <span style="display: block; font-size: 13px; color: #777;">tháng 10 18, 2025</span>
+        <h3 style="margin: 6px 0 0; font-size: 16px; color: #222;">Bài 7: Hàm alert(), confirm() và prompt() trong JavaScript</h3>
+      </div>
+    </a>
+  </li>
+
+  <li style="width: 260px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <a href="/LapTrinhMangMayTinh/posts/post8/" style="text-decoration: none; color: inherit;">
+      <img src="/LapTrinhMangMayTinh/images/post2.png" alt="post image" style="width: 100%; height: 150px; object-fit: cover;">
+      <div style="padding: 12px;">
+        <span style="display: block; font-size: 13px; color: #777;">tháng 10 18, 2025</span>
+        <h3 style="margin: 6px 0 0; font-size: 16px; color: #222;">Bài 8: Mảng trong JavaScript — Khai báo, truy xuất và các hàm thường dùng</h3>
+      </div>
+    </a>
+  </li>
+
+  <li style="width: 260px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <a href="/LapTrinhMangMayTinh/posts/post9/" style="text-decoration: none; color: inherit;">
+      <img src="/LapTrinhMangMayTinh/images/post2.png" alt="post image" style="width: 100%; height: 150px; object-fit: cover;">
+      <div style="padding: 12px;">
+        <span style="display: block; font-size: 13px; color: #777;">tháng 10 18, 2025</span>
+        <h3 style="margin: 6px 0 0; font-size: 16px; color: #222;">Bài 9: DOM là gì và cách truy xuất DOM elements trong JavaScript</h3>
+      </div>
+    </a>
+  </li>
 </ul>
 
     
@@ -221,7 +240,19 @@
 
   
   
-  <script src="/LapTrinhMangMayTinh/js/coder.js"></script>
+  <script src="/LapTrinhMangMayTinh/js/coder.js">
+// Hiệu ứng hover nhẹ cho thẻ bài
+document.querySelectorAll("ul li").forEach(li => {
+  li.addEventListener("mouseover", () => {
+    li.style.transform = "translateY(-5px)";
+    li.style.boxShadow = "0 6px 12px rgba(0,0,0,0.15)";
+  });
+  li.addEventListener("mouseout", () => {
+    li.style.transform = "translateY(0)";
+    li.style.boxShadow = "0 2px 6px rgba(0,0,0,0.1)";
+  });
+});
+  </script>
   
 
   
