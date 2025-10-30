@@ -144,7 +144,7 @@
       </h1>
     </header>
     
- <!-- 📚 Danh sách bài viết JavaScript cơ bản -->
+<!-- 📚 Danh sách bài viết JavaScript cơ bản -->
 <ul id="post-list" style="display: flex; flex-wrap: wrap; gap: 20px; list-style: none; padding: 0; justify-content: center;">
 
   <!-- Bài 1 -->
@@ -233,7 +233,7 @@
 
 </ul>
 
-    
+
 
 
 
@@ -290,9 +290,9 @@
 
   
   
-<!-- Thêm hiệu ứng hover -->
+<!-- 🌟 Hover effect chỉ cho vùng post-list -->
 <script>
-  document.querySelectorAll('li').forEach(li => {
+  document.querySelectorAll('#post-list li').forEach(li => {
     li.addEventListener('mouseenter', () => {
       li.style.transform = 'translateY(-6px) scale(1.03)';
       li.style.boxShadow = '0 6px 18px rgba(0, 255, 255, 0.25)';
@@ -311,6 +311,7 @@
     });
   });
 </script>
+
   
 
 </body>
