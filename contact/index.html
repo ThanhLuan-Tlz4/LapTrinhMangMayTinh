@@ -24,7 +24,39 @@
 
   <main class="wrapper">
     <!-- 🧭 GIỮ NGUYÊN NAVBAR MẶC ĐỊNH CỦA HUGO -->
-    {{ partial "navigation.html" . }}
+       <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://thanhluan-tlz4.github.io/LapTrinhMangMayTinh/">
+      ThanhLuanBlog
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/about/">Giới thiệu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/posts/">Bài viết</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/LapTrinhMangMayTinh/contact/">Liên hệ</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
 
     <!-- 📩 PHẦN CONTACT CUSTOM -->
     <section id="contact" style="max-width:700px; margin:60px auto; padding:30px; background:#161b22; border-radius:16px; box-shadow:0 4px 15px rgba(0,0,0,0.4); color:#e6edf3; font-family:'Segoe UI',sans-serif;">
@@ -96,3 +128,4 @@
   </script>
 </body>
 </html>
+
